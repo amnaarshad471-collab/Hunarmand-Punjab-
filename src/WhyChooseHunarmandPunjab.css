@@ -1,0 +1,109 @@
+.platform.white {
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --primary-color: #079560;
+  --secondary-color: #1a1e1d;
+  --neutral-color: #687079;
+  --dark-color: #1a1e1d;
+  --font-family: "Jost", sans-serif;
+  color: #fff !important;
+  background-color: #1a1e1d;
+  justify-content: center;
+  padding: 8% 3% 3%;
+  text-align: center;
+  font-family: var(--font-family) !important;
+  box-sizing: border-box;
+}
+
+.font-40 {
+  font-size: 45px;
+ font-weight: 400 ;
+}
+
+.stats.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat.col-lg-3.col-md-12 {
+  flex: 0 0 auto;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  .stat.col-lg-3.col-md-12 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat.col-lg-3.col-md-12 {
+    width: 100%;
+  }
+}
+
+.font-48 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.font-16 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.m-0 {
+  margin: 0 !important;
+}

@@ -1,0 +1,138 @@
+.card-section {
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Initial hidden state */
+.card-text-area,
+.card-img-area {
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+/* Text Area Animation (from right → left) */
+.card-wrapper.active .card-text-area {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-text-area {
+  flex: 1 1 50%;
+  transform: translateX(120px);
+}
+
+/* Image Area Animation (from left → right) */
+.card-wrapper.active .card-img-area {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-img-area {
+  flex: 1 1 45%;
+  text-align: center;
+  transform: translateX(-120px);
+}
+
+.card-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styles */
+.card-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.card-para {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.card-benefit-title {
+  font-weight: 600;
+  color: #079560;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.card-benefits ul {
+  list-style: disc;
+  margin-left: 25px;
+  color: #444;
+  line-height: 1.8;
+  font-size: 15.5px;
+}
+
+.card-highlight {
+  color: #079560;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Button */
+.card-btn {
+  background-color: #079560;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #009a6e;
+  transform: translateY(-3px);
+}
+
+.card-btn-box {
+  margin-top: 30px;
+}
+
+.card-btn-mobile {
+  display: none;
+  margin-top: 25px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .card-text-area,
+  .card-img-area {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .card-btn-box {
+    display: none;
+  }
+
+  .card-btn-mobile {
+    display: block;
+  }
+}

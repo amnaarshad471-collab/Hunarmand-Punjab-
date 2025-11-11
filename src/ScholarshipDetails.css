@@ -1,0 +1,46 @@
+.scholarship-card {
+  background: #ffffff;
+  border-radius: 12px;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.scholarship-card h2 {
+  font-weight: 700;
+  color: #079560;
+}
+
+.scholarship-card h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.scholarship-card h5 {
+  font-weight: 500;
+  color: #333;
+}
+
+.scholarship-card ul,
+.scholarship-card ol {
+  padding-left: 1.2rem;
+}
+
+.scholarship-card li {
+  margin-bottom: 6px;
+}
+
+.scholarship-card a {
+  color: #079560;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.scholarship-card a:hover {
+  text-decoration: underline;
+}
+
+.scholarship-card strong {
+  color: #333;
+}

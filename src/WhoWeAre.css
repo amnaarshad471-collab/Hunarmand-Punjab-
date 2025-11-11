@@ -1,0 +1,85 @@
+.who-we-are-section {
+  background-color: #fff;
+  color: #1a1e1d;
+  font-family: "Jost", sans-serif;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* Added for smooth animation visibility */
+}
+
+.section-label {
+  color: #079560;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-title1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3c4852;
+}
+
+.about-btn-Who.btn {
+  background-color: #079560 !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 4px 20px;
+  border-radius: 50px;  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: none;
+}
+
+.section-description {
+  color: #3c4852;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.section-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #3c4852;
+}
+
+.mission-text {
+  font-size: 18px;
+  color: #3c4852;
+  line-height: 1.5;
+}
+
+.info-card {
+  background-color: #fff;
+  text-align: left;
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: #079560;
+  padding: 10px;
+}
+
+.info-card h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3c4852;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 18px;
+  color: #3c4852;
+  line-height: 1.4;
+}

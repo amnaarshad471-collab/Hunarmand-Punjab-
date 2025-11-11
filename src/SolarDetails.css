@@ -1,0 +1,151 @@
+/* Container */
+.solar-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Wrapper */
+.solar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+  /* overall entrance (vertical) */
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out;
+  will-change: transform, opacity;
+}
+
+/* Active state — vertical settle */
+.solar-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image side initial (off-left) */
+.solar-image-side {
+  flex: 1;
+  transform: translateX(-120px); /* start off-left */
+  opacity: 0;
+  transition: transform 1.6s cubic-bezier(.2,.9,.3,1), opacity 1.6s ease;
+  will-change: transform, opacity;
+}
+
+/* Image side when visible (slides to place on right side) */
+.solar-container.visible .solar-image-side {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Text side initial (off-right) */
+.solar-text-side {
+  flex: 1;
+  transform: translateX(120px); /* start off-right */
+  opacity: 0;
+  transition: transform 1.6s cubic-bezier(.2,.9,.3,1) 0.1s, opacity 1.6s ease 0.1s;
+  will-change: transform, opacity;
+}
+
+/* Text side when visible (slides to place on left side) */
+.solar-container.visible .solar-text-side {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Image */
+.solar-image {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text styles */
+.solar-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.solar-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Benefits */
+.solar-benefits {
+  margin-top: 20px;
+}
+
+.solar-benefits-heading {
+  font-weight: 600;
+  color: rgb(7, 149, 96);
+}
+
+.solar-benefits ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.solar-benefits ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Highlight & button */
+.solar-highlight {
+  font-weight: 700;
+  color: #1c8c64;
+  margin-top: 20px;
+}
+
+.solar-btn-area {
+  margin-top: 25px;
+}
+
+.btn-green {
+  background-color: #079560;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-green:hover {
+  background-color: #067b51;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .solar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .solar-image-side,
+  .solar-text-side {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .solar-image {
+    max-width: 90%;
+  }
+}

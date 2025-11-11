@@ -1,0 +1,175 @@
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.particles-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Eye button */
+.btn-eye {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #555;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-green {
+  background-color: #079560 !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 0;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-green:hover {
+  background-color: #067a4e !important;
+}
+
+.login-logo {
+  width: 180px;
+}
+
+.text-danger {
+  color: red;
+}
+
+a {
+  color: #079560;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.login {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.particles-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.applynow-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Main Box Styling */
+.applynow {
+  background: #ffffff;
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 128, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.applynow:hover {
+  box-shadow: 0 0 35px rgba(0, 128, 0, 0.3);
+}
+
+/* Logo */
+.apply-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+/* Headings and Text */
+.apply-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0b582a;
+}
+
+.apply-text {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.auth-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.register-btn {
+  background-color: #0b582a;
+  color: #fff;
+  border: 2px solid #0b582a;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #fff;
+  color: #0b582a;
+}
+
+@media (max-width: 768px) {
+  .applynow {
+    padding: 40px 20px;
+  }
+  .apply-title {
+    font-size: 1.4rem;
+  }
+  .apply-text {
+    font-size: 1rem;
+  }
+  .register-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

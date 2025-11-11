@@ -1,0 +1,50 @@
+.certificate-section {
+  background-color: rgb(7, 149, 96);
+}
+
+.certificate-box {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.certificate-box label {
+  color: #333;
+  font-weight: 600;
+}
+
+.certificate-box .form-control,
+.certificate-box .form-select {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.certificate-box .form-control:focus,
+.certificate-box .form-select:focus {
+  border-color: #079560;
+  box-shadow: 0 0 5px rgba(7, 149, 96, 0.6);
+}
+
+.btn-apply {
+  background-color: #079560;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-apply:hover {
+  background-color: #056b46;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .certificate-box {
+    padding: 25px 20px;
+  }
+  .certificate-box h3 {
+    font-size: 22px;
+  }
+}
